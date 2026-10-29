@@ -36,6 +36,12 @@ Stretch: within 30 marks below the Round 2 cutoff · otherwise out of reach. "Sa
 The 30 and 15 are constants at the top of `core.py`.
 
 
+## Future goals
+- Add hostel availability details.
+- Locality of college.
+- Google maps location pin.
+
+
 ## Disclaimer
 
 Verify with the official DU CSAS admission
