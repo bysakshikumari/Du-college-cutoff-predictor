@@ -3,7 +3,7 @@
 Streamlit app that shows which Delhi University courses a CUET score can realistically get, based on the official
 **2026** Round 1, Round 2 and Spot Round cutoffs (2025 Round 1 is used for trends only).
 
-**Live demo:** - https://du-college-cutoff-preditor.streamlit.app/
+**Live demo:** - https://du-college-cutoff-predictor.streamlit.app/
 
 
 ## Problem
