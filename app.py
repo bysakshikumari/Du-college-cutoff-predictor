@@ -94,11 +94,10 @@ with tab_trend:
     left, right = st.columns(2)
     
     st.plotly_chart(charts.year_scatter(both), width="stretch")
-    left, right = st.columns(2)
     
     main = data[data["category"].isin(["UR", "EWS", "OBC", "SC", "ST"])]
-    right.markdown("**Median 2026 Round 1 cutoff by category**")
-    right.bar_chart(main.groupby("category")["r1"].median().reindex(["UR", "EWS", "OBC", "SC", "ST"]).round(1))
+    markdown("**Median 2026 Round 1 cutoff by category**")
+    bar_chart(main.groupby("category")["r1"].median().reindex(["UR", "EWS", "OBC", "SC", "ST"]).round(1))
 
 # ---------- Colleges ----------
 with tab_col:
