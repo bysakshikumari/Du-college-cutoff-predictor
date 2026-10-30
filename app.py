@@ -92,8 +92,7 @@ with tab_trend:
     c3.metric("Programmes that rose", f"{(both['yoy'] > 0).mean():.0%}")
     c4.metric("Median Round 1→2 change", f"{t['r1_to_r2'].median():+.1f}")
     left, right = st.columns(2)
-    left.plotly_chart(charts.subject_bars(both, "yoy", "Change by subject, 2025 → 2026 R1 (median points)"), width="stretch")
-    right.plotly_chart(charts.subject_bars(t, "r1_to_r2", "Round 1 → Round 2 drop by subject (median points)"), width="stretch")
+    
     st.plotly_chart(charts.year_scatter(both), width="stretch")
     left, right = st.columns(2)
     left.plotly_chart(charts.change_hist(both, "yoy", "Distribution of year-on-year change"), width="stretch")
