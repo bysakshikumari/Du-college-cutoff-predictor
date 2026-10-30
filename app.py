@@ -95,10 +95,7 @@ with tab_trend:
     
     st.plotly_chart(charts.year_scatter(both), width="stretch")
     
-    main = data[data["category"].isin(["UR", "EWS", "OBC", "SC", "ST"])]
-    markdown("**Median 2026 Round 1 cutoff by category**")
-    bar_chart(main.groupby("category")["r1"].median().reindex(["UR", "EWS", "OBC", "SC", "ST"]).round(1))
-
+    
 # ---------- Colleges ----------
 with tab_col:
     ccat = st.selectbox("Category", cats, format_func=CATEGORIES.get, key="ccat")
