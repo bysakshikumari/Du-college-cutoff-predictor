@@ -95,7 +95,7 @@ with tab_trend:
     
     st.plotly_chart(charts.year_scatter(both), width="stretch")
     left, right = st.columns(2)
-    left.plotly_chart(charts.change_hist(both, "yoy", "Distribution of year-on-year change"), width="stretch")
+    
     main = data[data["category"].isin(["UR", "EWS", "OBC", "SC", "ST"])]
     right.markdown("**Median 2026 Round 1 cutoff by category**")
     right.bar_chart(main.groupby("category")["r1"].median().reindex(["UR", "EWS", "OBC", "SC", "ST"]).round(1))
