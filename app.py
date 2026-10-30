@@ -4,10 +4,10 @@ import streamlit as st
 import charts
 from core import CATEGORIES, HELP, ICONS, SHORT, STREAMS, classify, load, ordered, shortlist
 
-st.set_page_config(page_title="DU College & Course Predictor", page_icon="🎓", layout="wide")
+st.set_page_config(page_title="DU College & Course Predictor", layout="wide")
 data = load()
 
-st.title("🎓 DU College & Course Predictor")
+st.title("DU College & Course Predictor")
 st.caption("Built on the official 2026 Round 1, Round 2 and Spot Round cutoffs, with 2025 as the trend check. Use it to plan 2027 admissions.")
 
 # ---------- Sidebar: your score + filters ----------
@@ -43,7 +43,7 @@ def show(df, columns, **kw):
     st.dataframe(df[columns], hide_index=True, width="stretch", column_config=CONFIG, **kw)
 
 
-tab_pred, tab_cmp, tab_trend, tab_col, tab_about = st.tabs(["🎯 Predictor", "🧭 Compare colleges", "📈 Trends", "🏫 Colleges", "ℹ️ About the data"])
+tab_pred, tab_cmp, tab_trend, tab_col, tab_about = st.tabs(["Predictor", "Compare colleges", "Trends", "Colleges", "About the data"])
 
 # ---------- Predictor ----------
 with tab_pred:
