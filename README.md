@@ -6,6 +6,9 @@ Streamlit app that shows which Delhi University courses a CUET score can realist
 **Live demo:** - https://du-college-cutoff-predictor.streamlit.app/
 
 
+<img width="920" height="360" alt="image" src="https://github.com/user-attachments/assets/d778c4ba-aa32-4744-957b-836d2b013182" />
+
+
 ## Problem
 
 Every year, thousands of DU aspirants manually scroll through dozens of separate college PDFs
